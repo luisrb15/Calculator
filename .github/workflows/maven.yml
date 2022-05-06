@@ -33,5 +33,5 @@ jobs:
       with:
         cache: maven
     - name: Run tests
-      run: mvn -Dtest=TestCircle test
+      run: mvn -Dtest=TestCircle CalculatorTest.java test
 

@@ -33,5 +33,5 @@ jobs:
       with:
         cache: maven
     - name: Run tests
-      run: mvn test --file pom.xml
+      run: mvn -Dtest=TestCircle test
 

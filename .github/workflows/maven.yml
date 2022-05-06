@@ -33,5 +33,5 @@ jobs:
       with:
         cache: maven
     - name: Run tests
-      run: mvn -Dtest= *-tests
+      run: mvn -Dtest= Test --file pom.xml
 

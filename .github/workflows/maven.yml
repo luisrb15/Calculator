@@ -33,5 +33,5 @@ jobs:
       with:
         cache: maven
     - name: Run tests
-      run: mvn -Dtest="test/CalculatorTest" test
+      run: mvn -Dtest=test/java/com/houarizegai/calulator/CalculatorTest.java test
 

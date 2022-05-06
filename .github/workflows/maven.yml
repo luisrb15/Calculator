@@ -33,5 +33,5 @@ jobs:
       with:
         cache: maven
     - name: Run tests
-      run: mvn -Dtest=* integration-test
+      run: mvn -Dtest= *-tests
 

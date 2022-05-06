@@ -33,5 +33,5 @@ jobs:
       with:
         cache: maven
     - name: Run tests
-      run: mvn -B test --file CalculatorTest.java
+      run: mvn -Dtest=* integration-test
 

@@ -15,6 +15,52 @@
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
 
+    <profiles>
+        <profile>
+            <id>github-actions</id>
+            <activation>
+              <property>
+                <name>env.BUILD_ENV</name>
+                <value>github-actions</value>
+              </property>
+            </activation>
+            <repositories>
+              <repository>
+                <id>artifactory</id>
+                <name>lbproject</name>
+                <url>https://lbproject.jfrog.io/artifactory/maven-default-local</url>
+                <releases>
+                  <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                  <enabled>false</enabled>
+                </snapshots>
+              </repository>
+            </repositories>
+            <pluginRepositories>
+              <pluginRepository>
+                <id>artifactory</id>
+                <name>lbproject</name>
+                <url>https://lbproject.jfrog.io/artifactory/maven-default-local</url>
+                <releases>
+                  <enabled>true</enabled>
+                </releases>
+                <snapshots>
+                  <enabled>false</enabled>
+                </snapshots>
+              </pluginRepository>
+              <pluginRepository>
+                <snapshots>
+                  <enabled>false</enabled>
+                </snapshots>
+                <id>central</id>
+                <name>bintray-plugins</name>
+                <url>https://jcenter.bintray.com</url>
+              </pluginRepository>
+            </pluginRepositories>
+          </profile>
+    </profiles>    
+
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>

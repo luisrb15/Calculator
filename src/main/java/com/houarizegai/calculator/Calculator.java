@@ -436,7 +436,7 @@ public class Calculator {
         combo.setToolTipText(toolTip);
         combo.setCursor(new Cursor(Cursor.HAND_CURSOR));
         combo.addItemListener(consumerEvent::accept);
-        window.add(combo);
+        window.add(combo); 
 
         return combo;
     }

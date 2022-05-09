@@ -8,7 +8,7 @@
     <artifactId>Calculator</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
-	<name>Libreria</name>
+	<name>Calculator</name>
 	<scm>
 		<developerConnection>scm:git:https://github.com/luisrb15/Calculator.git/</developerConnection>
     		<url>https://github.com/luisrb15/Calculator</url>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.2.0 http://maven.apache.org/xsd/settings-1.2.0.xsd" xmlns="http://maven.apache.org/SETTINGS/1.2.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <servers>
+    <server>
+      <username>luis.becerra.15.12@gmail.com</username>
+      <password>AKCp8mYeP3bbxMdPvx69RbLyBrfZsQCRfgsW4pNmsnhMRvif2DcYoR7KPjJfvjacUbFhTS1Jp</password>
+      <id>central</id>
+    </server>
+    <server>
+      <username>luis.becerra.15.12@gmail.com</username>
+      <password>AKCp8mYeP3bbxMdPvx69RbLyBrfZsQCRfgsW4pNmsnhMRvif2DcYoR7KPjJfvjacUbFhTS1Jp</password>
+      <id>snapshots</id>
+    </server>
+  </servers>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>calculator-libs-release</name>
+          <url>https://lbproject.jfrog.io/artifactory/calculator-libs-release</url>
+        </repository>
+        <repository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>calculator-libs-snapshot</name>
+          <url>https://lbproject.jfrog.io/artifactory/calculator-libs-snapshot</url>
+        </repository>
+      </repositories>
+      <pluginRepositories>
+        <pluginRepository>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+          <id>central</id>
+          <name>calculator-libs-release</name>
+          <url>https://lbproject.jfrog.io/artifactory/calculator-libs-release</url>
+        </pluginRepository>
+        <pluginRepository>
+          <snapshots />
+          <id>snapshots</id>
+          <name>calculator-libs-snapshot</name>
+          <url>https://lbproject.jfrog.io/artifactory/calculator-libs-snapshot</url>
+        </pluginRepository>
+      </pluginRepositories>
+      <id>artifactory</id>
+    </profile>
+  </profiles>
+  <activeProfiles>
+    <activeProfile>artifactory</activeProfile>
+  </activeProfiles>
+</settings>

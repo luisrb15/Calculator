@@ -7,7 +7,7 @@
     <groupId>com.houari</groupId>
     <artifactId>Calculator</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
 	<name>Calculator</name>
 	<scm>
 		<developerConnection>scm:git:https://github.com/luisrb15/Calculator.git/</developerConnection>

@@ -117,11 +117,11 @@
                         </goals>
                         <configuration>
                             <publisher>
-                                <contextUrl>https://lbproject.jfrog.io/artifactory/default-maven-virtual/</contextUrl>
-                                <username>luis.becerra.15.12@gmail.com</username>
+                                <contextUrl>https://lbproject.jfrog.io/artifactory/default-maven-local/</contextUrl>
+                                <username>calculatortoken</username>
                                 <password>${env.ARTIFACTORY_TOKEN}</password>
-                                <repoKey>default-maven-virtual</repoKey>
-                                <snapshotRepoKey>default-maven-virtual</snapshotRepoKey>
+                                <repoKey>default-maven-local</repoKey>
+                                <snapshotRepoKey>default-maven-local</snapshotRepoKey>
                             </publisher>
                         </configuration>
                     </execution>

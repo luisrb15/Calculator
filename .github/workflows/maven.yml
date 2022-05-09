@@ -11,7 +11,7 @@ on:
     branches: [ master ]
 
 jobs:
-  gitleaks:
+  gitleaks_and_anchore:
     name: Gitleaks Test
     runs-on: ubuntu-latest
     steps:
@@ -20,6 +20,9 @@ jobs:
           fetch-depth: '0'
       - name: gitleaks-action
         uses: zricethezav/gitleaks-action@master
+      - uses: anchore/scan-action@v3
+        with:
+          image: ${{ github.ref }} 
 
   tests:
     name: Unit Tests

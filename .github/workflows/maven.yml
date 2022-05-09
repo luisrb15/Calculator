@@ -22,7 +22,7 @@ jobs:
         uses: zricethezav/gitleaks-action@master
       - uses: anchore/scan-action@v3
         with:
-          image: ${{ github.ref }} 
+          path: '.' 
 
   tests:
     name: Unit Tests
@@ -45,6 +45,7 @@ jobs:
         run: mvn -B test
   
   build:
+    name: Build
     runs-on: ubuntu-latest
     needs: [ tests, gitleaks ]
     steps:

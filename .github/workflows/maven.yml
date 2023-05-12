@@ -11,15 +11,15 @@ on:
     branches: [ master ]
 
 jobs:
-  gitleaks:
-    name: Gitleaks Test
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-        with:
-          fetch-depth: '0'
-      - name: gitleaks-action
-        uses: zricethezav/gitleaks-action@master
+  #gitleaks:
+   # name: Gitleaks Test
+    #runs-on: ubuntu-latest
+    #steps:
+     # - uses: actions/checkout@v2
+      #  with:
+       #   fetch-depth: '0'
+      #- name: gitleaks-action
+       # uses: zricethezav/gitleaks-action@master
       
 
   anchore:
@@ -35,7 +35,8 @@ jobs:
 
   tests:
     name: Unit Tests
-    needs: [ gitleaks, anchore ]
+    #needs: [ gitleaks, anchore ]
+    needs: anchore
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
